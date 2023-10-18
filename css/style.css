@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+/* CSS general o de función */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* CSS de la App */
+
+body {
+    background: #111729;
+    height: 100vh;
+}
+
+.bg-img {
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    right: 85px;
+    transform: translate(0, -50%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+.input--content {
+    border-radius: 0.8rem;
+    border: 1px solid #3662E3;
+    padding: 5px;
+    width: 550px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090d16;
+}
+
+input[type='text'] {
+    width: 420px;
+    height: 100%;
+    background-color: transparent;
+    color: #F2F5F9;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+input[type='text']::placeholder {
+    font-weight: 700;
+    color: #364153;
+
+}
+
+.generateQr {
+    height: 100%;
+    padding: 8px 33px;
+    border-radius: 9px;
+    border: none;
+    background: #3662E3;
+    cursor: pointer;
+    color: #F2F5F9;
+    font-weight: bold;
+}
+
+.qr--logo {
+    position: absolute;
+    top: 35px;
+    left: 75px;
+}
+
+.actions {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+#qrContent {
+    flex-direction: column;
+    gap: 45px;
+}
+
+.actions button,
+.actions a {
+    padding: 5px 25px;
+    height: 35px;
+    background-color: #3662E3;
+    color: #F2F5F9;
+    font-weight: 700;
+    border: none;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.actions button i,
+.actions a i {
+    font-size: 1.2rem;
+}
+
+.qr-bg {
+    background-color: #F2F5F9;
+    border-radius: 25px;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-bg2 {
+    background-color: #1e2c51;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}

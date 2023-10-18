@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCode Generator</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
+        integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <img class="bg-img" src="./img/bg-illustration.svg" alt="background">
+    <main>
+        <img id="logo" src="./img/logo-qr-generator.svg" alt="Logo qr generator">
+        <form id="form">
+            <div class="input--content">
+                <input type="text" name="qrValue" Download placeholder="Enter an url" autofocus required
+                    autocomplete="off">
+                <button class="generateQr">QR code</button>
+            </div>
+        </form>
+        <section class="hidden" id="qrContent">
+            <!-- #1e2c51 -->
+            <article class="qr-bg2">
+                <div class="qr-bg">
+                    <div id="qr"></div>
+                </div>
+            </article>
+            <menu class="actions">
+                <a id="download">
+                    Download
+                    <i class='bx bx-download'></i>
+                </a>
+                <button id="copiar">
+                    Share
+                    <i class='bx bx-link-alt'></i>
+                </button>
+            </menu>
+        </section>
+    </main>
+</body>
+
+</html>
